@@ -1,0 +1,38 @@
+.Scene .overlay-top-left
+{
+    position: absolute;
+    top: 0px;
+}
+.Scene .overlay-bottom-right
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.Scene .overlay-top-left .detail {
+    pointer-events: none;
+    position: sticky;
+    top: 0px;
+    display: inline-block;
+    max-width: 600px;
+    padding: 0;
+    padding: 80px;
+    color: #a0a0a0;
+    line-height: 1.6em;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+
+.Scene .overlay-bottom-right .detail {
+    pointer-events: none;
+    position: sticky;
+    top: 0px;
+    display: inline-block;
+    max-width: 600px;
+    padding: 0;
+    padding: 80px;
+    color: #a0a0a0;
+    line-height: 1.6em;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
