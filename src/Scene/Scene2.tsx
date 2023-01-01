@@ -2,8 +2,11 @@ import { Environment, Html, useProgress } from "@react-three/drei";
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from '@react-three/fiber';
 import DockModel from "../Model/Duck";
+import TaxiModel from "../Model/Taxi";
+import Ocean from "../Model/Ocean";
 import ErrorBoundary from "../Utility/ErrorBoundary";
 import './Scene.css';
+import DuckModel from "../Model/Duck";
 
 interface IWindowSize {
   width: number;
@@ -51,7 +54,8 @@ const Scene: React.FC = () => {
         <Canvas>
           <Suspense fallback={<LoaderDiv/>}>
               <Environment preset={'studio'} />
-              <DockModel/>
+              <DuckModel/>
+              <Ocean/>
           </Suspense>
         </Canvas>
       </ErrorBoundary>
